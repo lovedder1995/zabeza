@@ -1,0 +1,32 @@
+[
+  {
+    "imagen": "banderas/Alemania.png",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Alemania"
+  },
+  {
+    "imagen": "banderas/Argentina.webp",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Argentina"
+  },
+  {
+    "imagen": "banderas/Brasil.png",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Brasil"
+  },
+  {
+    "imagen": "banderas/Canadá.png",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Canadá"
+  },
+  {
+    "imagen": "banderas/Chile.png",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Chile"
+  },
+  {
+    "imagen": "banderas/Colombia.webp",
+    "pregunta": "¿De qué es esta bandera?",
+    "respuesta": "Colombia"
+  }
+]

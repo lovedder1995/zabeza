@@ -1,0 +1,14 @@
+[
+  {
+    "imágenes": [
+      "huesos_del_cuerpo_humano/Fémures.gif",
+      "huesos_del_cuerpo_humano/Fémur_derecho.gif"
+    ],
+    "pregunta": "¿Cómo se llama este hueso?",
+    "respuesta": "Fémur"
+  },
+  {
+    "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "respuesta": "Fémur"
+  }
+]

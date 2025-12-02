@@ -11,31 +11,40 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val sumButton: Button = findViewById(R.id.sum_button)
-        val subtractButton: Button = findViewById(R.id.subtract_button)
-        val multiplyButton: Button = findViewById(R.id.multiply_button)
-        val divideButton: Button = findViewById(R.id.divide_button)
-
-        sumButton.setOnClickListener {
-            launchPracticeActivity("sum")
+        findViewById<Button>(R.id.sum_button).setOnClickListener {
+            launchMathActivity("sum")
         }
 
-        subtractButton.setOnClickListener {
-            launchPracticeActivity("subtract")
+        findViewById<Button>(R.id.subtract_button).setOnClickListener {
+            launchMathActivity("subtract")
         }
 
-        multiplyButton.setOnClickListener {
-            launchPracticeActivity("multiply")
+        findViewById<Button>(R.id.multiply_button).setOnClickListener {
+            launchMathActivity("multiply")
         }
 
-        divideButton.setOnClickListener {
-            launchPracticeActivity("divide")
+        findViewById<Button>(R.id.divide_button).setOnClickListener {
+            launchMathActivity("divide")
+        }
+
+        findViewById<Button>(R.id.bones_button).setOnClickListener {
+            launchQuizActivity("huesos_del_cuerpo_humano")
+        }
+
+        findViewById<Button>(R.id.flags_button).setOnClickListener {
+            launchQuizActivity("banderas")
         }
     }
 
-    private fun launchPracticeActivity(operation: String) {
+    private fun launchMathActivity(operation: String) {
         val intent = Intent(this, PracticeActivity::class.java)
         intent.putExtra("operation", operation)
+        startActivity(intent)
+    }
+
+    private fun launchQuizActivity(quizName: String) {
+        val intent = Intent(this, QuizActivity::class.java)
+        intent.putExtra("quiz_name", quizName)
         startActivity(intent)
     }
 }
